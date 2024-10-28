@@ -243,3 +243,107 @@ res = !result
 console.log(res,result)
 
 // Conditional Statement
+var num5 = 14;
+var num6 = 12;
+if (num5>num6)
+    console.log("num5 is greater");
+else{
+    console.log("num6 is greater");
+    console.log("yee..");
+}
+// when the number of lines more than one we use {}bracket
+
+console.log("bye...");
+
+var num5 = 8;
+var num6 = 19;
+var num7 = 10;
+if (num5>num6 && num5>num7){
+  console.log("num5 is greatest");
+}
+else if( num6>num7){
+  console.log("num6 is greatest");
+}
+else {
+  console.log("num7 is greatest");
+}
+
+// assignment
+var num5 = 7;
+var num6 = 8;
+if (num5%2 ==0 && num6%2 ==0){
+  console.log("both are even");
+}
+else if (num5%2 ==0){
+  console.log("num5 is even");
+}
+else {
+  console.log("num6 is even");
+}
+
+var num5 = 8;
+if (num5%2===0)
+      result = "Even"
+else
+      result = "Odd"
+    console.log(result)
+
+// Ternary Operator
+result = num5%2===0 ? "Even" : "Odd"
+    console.log(result);
+
+    // Switch Statement
+let day = "Holiday"
+
+  switch(day){
+    case "Monday" :
+      console.log("4am");
+      break;
+    case "Tuesday" :
+    case "Wednesday" :
+      console.log("5am");
+       break;
+    case "Thursday" :
+      console.log("6am");
+       break;
+    case "Friday" :
+      console.log("8am");
+       break;
+    case "Saturday" :
+      console.log("7am");
+       break;
+    case "Sunday" :
+      console.log("9am");
+      break;
+    default :
+     console.log("10am watch movies and have fun")
+
+  }
+
+  console.log("bye...")
+
+  // Template Literal
+  var num5 = 5
+  var num6 = 8
+  result = num5 + num6
+
+  console.log(`The addition of ${num5} and ${num6} is ${result}`)
+    // console.log("The addition of 5 and 8 is 13")
+    // console.log("The addition of " + num5 + "and" + num6 + "is" + result)
+
+    console.log("My name is \nSuryansh Gupta")
+    console.log(`My name is
+    Suryansh Gupta`)
+
+    // While loop
+        // initialize, condition , increment
+        let i = 1;
+  
+        while(i<=6)
+        {
+          console.log("Suryansh");
+          // i = i + 1
+          i++;
+        }
+
+       
