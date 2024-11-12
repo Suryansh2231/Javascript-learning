@@ -5,40 +5,40 @@ console.log("Suryansh")
 console.log(num)
 console.log(num+2+3)
 
-let radius=5
+var radius=5
 const pi=3.14
 radius=6
 area= pi*radius*radius
 console.log(area)
 
-let hight=12
-let base=15
+var hight=12
+var base=15
 area=1/2*hight*base
 console.log(area)
 
-let userName= "Suryansh"
+var userName= "Suryansh"
 //  this variable shows camel casing rule
 console.log(userName)
 
-let user_name= "Abhishek"
+var user_name= "Abhishek"
 //  this variable shows snake casing rule
 console.log(user_name)
 
 console.log("Suryansh's account")
 
-let numb=34
+var numb=34
 console.log(numb)
 console.log(typeof numb)
 
-let bol=6>4
+var bol=6>4
 console.log(bol)
 bol=7>9
 console.log(bol)
 console.log(typeof bol)
 
-let firstName="Suryansh"
-let lastName="Gupta"
-let user= firstName+lastName
+var firstName="Suryansh"
+var lastName="Gupta"
+var user= firstName+lastName
 console.log(user)
 console.log
 user=firstName+" "+lastName
@@ -70,7 +70,7 @@ console.log(sub)
 
 
 //  Type Conversion
-let nm=4
+var nm=4
 console.log(nm)
 console.log(nm,typeof nm)
 nm="4"
@@ -83,7 +83,7 @@ console.log(nm, typeof nm )
 // string+number=String
 // string-number=number
 
-let x=6
+var x=6
  console.log(x,typeof x)
  x= x+" "
  console.log(x,typeof x)
@@ -113,7 +113,7 @@ console.log(typeof y)
 console.log(typeof y,y)
 
 // Arithmatic Operators
-let num1=8
+var num1=8
 num2=6
 result=num1+num2
 console.log(result)
@@ -170,7 +170,7 @@ for (let i = 0; i <= 10; i+=2) {
 
   console.log(" sum of i",c)
 
-let m=4
+var m=4
   let n = ++m
   // pre increment first it will increment then it will asign the value
 console.log(m,n)
@@ -186,25 +186,25 @@ console.log(result)
 result = m**3
 console.log(result)
 
-let data = 8 >= 8
+var data = 8 >= 8
 console.log(data)
 
-let d = "Bat"
-let g = "Batter"
+var d = "Bat"
+var g = "Batter"
 result = d > g
 console.log(result)
 result = d < g
 console.log(result)
 
-let p = 3
-let h = "6"
+var p = 3
+var h = "6"
 result = p > h
 console.log(result)
 result = p < h
 console.log(result)
 
-let f = 1 
-let r = "6"
+var f = 1 
+var r = "6"
 result = f = r
 console.log(result,typeof result)
 result = f == r
@@ -337,13 +337,157 @@ let day = "Holiday"
 
     // While loop
         // initialize, condition , increment
-        let i = 1;
+        var i = 1;
   
         while(i<=6)
         {
-          console.log("Suryansh");
+          console.log("Suryansh",i);
           // i = i + 1
           i++;
         }
-
+console.log(i)
        
+var j = 6
+
+while (j>=0)
+{
+  console.log("Suryansh",j)
+  j--;
+}
+console.log(j)
+
+var i = 1;
+
+do
+{
+  console.log("Sahil",i);
+  i++;
+}while(i<=5)
+
+  // For Loop
+
+  
+  for(let i=1;i<=5;i++)
+  {
+    console.log("Suryansh",i);
+    for(let j=1;j<=5;j++)
+      // Nested Loop
+    console.log("Hello",j);
+  }
+
+  // when we have starting and ending point both in a loop then we will use For Loop
+  for(var i=1;i<=100;i++)
+  {
+    if(i%2===1)
+    console.log(i)
+  }
+  var num = 87645
+  console.log(num%10)
+  num = parseInt(num/10)
+  console.log(num%10)
+  num = parseInt(num/10)
+  console.log(num%10)
+  num = parseInt(num/10)
+  console.log(num%10)
+  num = parseInt(num/10)
+  console.log(num%10)
+
+  // when we do not know the ending point we use while loop
+  var num = 87645
+  while(num>0)
+  {
+    console.log(num%10)
+    num = parseInt(num/10)
+  }
+
+  // Object
+
+  var input = 'name'
+  var alien = {
+    name : 'Suryansh',
+    tech : 'javascript',
+    'work exp' : 4,
+  }
+  console.log(alien,typeof alien)
+  console.log(alien.name)
+  console.log(alien.tech)
+  console.log(alien['name'])
+  console.log(alien['tech'])
+  console.log(alien['work exp'])
+
+  console.log(alien[input]);
+
+  var alien = {
+    name : 'Suryansh',
+    tech : 'javascript',
+    laptop : { brand : 'Asus',
+      ram : 4,
+      cpu : 'i5'
+
+
+    }
+  }
+  console.log(alien)
+  console.log(alien.laptop)
+  console.log(alien.laptop.cpu)
+  console.log(alien.laptop.brand.length)
+  console.log(alien.laptop?.brand?.length)
+
+  delete alien.laptop
+  console.log(alien);
+
+  
+  var alien = {
+    name : 'Suryansh',
+    tech : 'javascript',
+    laptop : { brand : 'Asus',
+      ram : 4,
+      cpu : 'i5'
+
+
+    }
+  }
+
+  for(let key in alien)
+  {
+    console.log(key,alien.tech)
+  
+  }
+  
+  for(let key in alien)
+    {
+      console.log(key,alien[key]);
+    
+    }
+
+    // Function
+
+    function greet()
+    {
+    console.log("Hello World");
+    }
+    greet();
+    greet();
+    console.log("Suryansh")
+    greet();
+    greet();
+
+function greet()
+{
+  return "Hello World!!"
+console.log(str);
+}
+var stri = greet();
+console.log(stri);
+
+function greet(user)
+{
+  return 'Hello ${user}!!'
+}
+user = 'Suryansh'
+var stri = greet(user);
+console.log(stri);
+
+
+let heros = ["shaktiman" ,"ironman", "thor"]
+console.log(heros)

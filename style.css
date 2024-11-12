@@ -1,0 +1,18 @@
+div{
+    height: 100ox;
+    width: 100px;
+    color: white;
+    background-color: aqua;
+}
+.myclass{
+    height: 100ox;
+    width: 100px;
+    color: white;
+    background-color: aqua;
+}
+#myid{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    font-size: 20px;
+}
