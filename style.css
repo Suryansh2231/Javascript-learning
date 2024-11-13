@@ -1,18 +1,29 @@
 div{
-    height: 100ox;
-    width: 100px;
+    height: 10vh;
+    width: 100vw;
     color: white;
     background-color: aqua;
+    text-align: centre;
+
 }
 .myclass{
     height: 100ox;
     width: 100px;
     color: white;
     background-color: aqua;
+    text-align: centre;
+
 }
 #myid{
-    height: 100px;
-    width: 100px;
+    height: 10vh;
+    width: 100vw;
     background-color: red;
     font-size: 20px;
+    text-align: centre;
+    justify-content: center;
+    padding-left: 30vw;
+    padding-right: 30vw;
+    padding-top: 20px;
+    
+
 }
