@@ -411,6 +411,7 @@ console.log(companies)
 
 
 
+
 //   let attempt = 1
 
 // let gamenum=Math.floor(100*Math.random())
